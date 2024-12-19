@@ -1,0 +1,74 @@
+.news-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .news-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .news-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0077b6;
+  }
+  
+  .news-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .news-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .news-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .save-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .save-button:hover {
+    background: #218838;
+  }
+  
+  .error, .loading {
+    text-align: center;
+    color: #d9534f;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,355 @@
+/* Global Header and Navbar Styling in App.js */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007BFF;
+  color: white;
+  font-size: 24px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 100vh;
+}
+
+/* Global Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Indonesia.css */
+.news-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.news-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.news-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Specific styles for the Save/Unsave button */
+.save-button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.save-button.save {
+  background-color: #4CAF50; /* Green for Save */
+  color: white;
+}
+
+.save-button.unsave {
+  background-color: #f44336; /* Red for Un-Saved */
+  color: white;
+}
+
+/* Styling untuk input search */
+.search-input {
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4CAF50; /* Warna border ketika fokus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Efek shadow saat fokus */
+}
+
+.search-input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Styling untuk tombol search */
+.search-button {
+  background-color: #4CAF50; /* Warna hijau untuk tombol */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.search-button:hover {
+  background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+  transform: scale(1.05); /* Efek perbesaran sedikit saat hover */
+}
+
+.search-button:active {
+  transform: scale(1); /* Efek mengecil saat tombol diklik */
+}
+
+/* Styling untuk container search */
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Saved.css */
+/* Container untuk seluruh halaman Saved */
+.saved-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul halaman */
+.saved-container h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Layout grid untuk card */
+.saved-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* Card untuk setiap berita yang disimpan */
+.saved-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Hover effect untuk card */
+.saved-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Gambar berita (jika ada) */
+.saved-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Judul berita di dalam card */
+.saved-card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Ringkasan atau deskripsi berita */
+.saved-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-height: 4.8em; /* Batas tinggi untuk teks */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+/* Link untuk membaca berita */
+.saved-card a {
+  font-size: 1rem;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto; /* Memastikan tombol berada di bawah */
+  transition: color 0.3s ease;
+}
+
+.saved-card a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Tombol hapus berita */
+.remove-btn {
+  font-size: 1rem;
+  color: #e74c3c;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.remove-btn:hover {
+  color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .saved-container {
+    padding: 15px;
+  }
+
+  .saved-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .saved-card p {
+    font-size: 0.9rem;
+  }
+
+  .remove-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* SearchPage.js */
+.news-container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.news-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.news-card a {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}

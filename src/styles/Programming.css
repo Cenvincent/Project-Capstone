@@ -1,0 +1,102 @@
+/* File: src/styles/Programming.css */
+.programming-news-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .programming-news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .programming-news-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .programming-news-card h2 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .programming-news-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .programming-news-card a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .programming-news-card a:hover {
+    text-decoration: underline;
+  }
+  .save-button {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .save-button.save {
+    background-color: #4CAF50; /* Green for Save */
+    color: white;
+  }
+  
+  .save-button.unsave {
+    background-color: #f44336; /* Red for Un-Saved */
+    color: white;
+  }
+  
+  /* Styling untuk input search */
+.search-input {
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4CAF50; /* Warna border ketika fokus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Efek shadow saat fokus */
+}
+
+.search-input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Styling untuk tombol search */
+.search-button {
+  background-color: #4CAF50; /* Warna hijau untuk tombol */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.search-button:hover {
+  background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+  transform: scale(1.05); /* Efek perbesaran sedikit saat hover */
+}
+
+.search-button:active {
+  transform: scale(1); /* Efek mengecil saat tombol diklik */
+}
+
+/* Styling untuk container search */
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
